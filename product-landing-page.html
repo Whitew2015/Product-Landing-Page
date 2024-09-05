@@ -4,27 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
     <title>Nintendo Switch Consoles</title>
 </head>
 <body>
-    <header id="header">
-        <img id="header-img" src="https://i0.wp.com/paladinstudios.com/wp-content/uploads/2020/03/Nintendo-Switch-Logo.png?ssl=1"
-        alt="logo"/>
-        <h1>
-            Nintendo Switch Consoles
-        </h1>
-        <nav id="nav-bar">
-            <ul>
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#video" class="nav-link">Video</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="email-section">
-        </section>
-    </main>
-    
+    <div id="page-wrapper">
+        <header id="header">
+            <img id="header-img" src="https://i0.wp.com/paladinstudios.com/wp-content/uploads/2020/03/Nintendo-Switch-Logo.png?ssl=1"
+            alt="logo"/>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#comparison" class="nav-link">Video</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="email-section">
+                <h2>Get the latest news on Nintendo Switch Consoles</h2>
+                <form method="post" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" id="email" type="email" placeholder="Enter your email address"
+                    required />
+                    <input id="submit" type="submit" value="submit" class="btn" />
+                </form>
+            </section>
+            <div class="container">
+                <section id="features">
+                    <div class="grid">
+                        <div class="icon">
+                            <i class="fa fa-3x fa-gamepad"></i>
+                        </div>
+                        <div class="desc">
+                            <h2>Nintendo Switch Systems</h2>
+                            <p> The Nintendo Switch Systems offers playing your
+                                favorite games on the big screen or bringing
+                                the joy of gaming on the go.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon">
+                            <i class="fa fa-3x fa-truck"></i>
+                        </div>
+                        <div class="desc">
+                            <h2>Shipping</h2>
+                            <p> We make sure you receive your Nintendo system(s) as soon
+                                as you purchase your order. We also provide free returns
+                                if you are not satisfied with the product(s).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon">
+                            <i class="fa fa-3x fa-battery-full"></i>
+                        </div>
+                        <div class="desc">
+                            <h2>Qualtiy Assurance</h2>
+                            <p> For every purchase made, we will ensure there are
+                                no damages or faults to the system(s) and we will
+                                test any buttons or joysticks in case of stickiness.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="comparison">
+                    <iframe id="video" height="315" src="https://www.youtube.com/embed/q8X3W_TnggI"
+                    frameborder="0" title="Switch Console Comparison" allowfullscreen>
+                    </iframe>
+                </section>
+                <section id="pricing">
+                    <div class="product" id="nin-switch">
+                        <div class="level">Nintendo Switch</div>
+                        <h2>$299.99</h2>
+                        <ol>
+                            <li>TV Mode</li>
+                            <li>Tabletop Mode</li>
+                            <li>Handheld Mode</li>
+                            <li>4.5 to 9 Hour Battery Life</li>
+                        </ol>
+                        <button class="btn">Select</button>
+                    </div>
+                    <div class="product" id="switch-lite">
+                        <div class="level">Nintendo Switch Lite</div>
+                        <h2>$199.99</h2>
+                        <ol>
+                            <li>Handheld Mode</li>
+                            <li>Compact & Lightweight</li>
+                            <li>3 to 7 Hour Battery Life</li>
+                        </ol>
+                        <button class="btn">Select</button>
+                    </div>
+                    <div class="product" id="switch-oled">
+                        <div class="level">Nintendo Switch Oled</div>
+                        <h2>$349.99</h2>
+                        <ol>
+                            <li>TV Mode</li>
+                            <li>Tabletop Mode</li>
+                            <li>Handheld Mode</li>
+                            <li>TV Mode</li>
+                            <li>4.5 to 9 Hour Battery Life</li>
+                        </ol>
+                        <button class="btn">Select</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
